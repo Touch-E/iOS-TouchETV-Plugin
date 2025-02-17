@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LogoutPopupViewController" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k86-Pd-lRQ">
+                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VmJ-vb-brD">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="cg0-Vb-wRT">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBR-84-SHw">
+                                        <rect key="frame" x="710" y="365" width="500" height="350"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2a-Uq-SSi">
+                                                <rect key="frame" x="173" y="50" width="154" height="42"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                <color key="textColor" name="White"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hII-r1-pPe">
+                                                <rect key="frame" x="15" y="151" width="470" height="48"/>
+                                                <string key="text">We will send you a code yada-yada-yada and so on 
+and so on this is just an example</string>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SsN-nu-9EZ">
+                                                <rect key="frame" x="20" y="260" width="460" height="50"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HoX-UT-me4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="230" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60f-VR-ix9">
+                                                                <rect key="frame" x="0.0" y="0.0" width="230" height="50"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Cancel"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Cancel">
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="btnCancelAction:" destination="-1" eventType="primaryActionTriggered" id="dY4-eZ-tix"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WQA-ul-7KR">
+                                                        <rect key="frame" x="230" y="0.0" width="230" height="50"/>
+                                                        <subviews>
+                                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MqV-fw-eMa">
+                                                                <rect key="frame" x="0.0" y="0.0" width="230" height="50"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Logout"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Logout">
+                                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <integer key="value" value="20"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="btnLogoutAction:" destination="-1" eventType="primaryActionTriggered" id="lE1-4e-4sw"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="PXB-KE-BXw"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.1176470588" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="350" id="APi-wE-XTU"/>
+                                            <constraint firstItem="o2a-Uq-SSi" firstAttribute="top" secondItem="zBR-84-SHw" secondAttribute="top" constant="50" id="EuE-Xj-Pth"/>
+                                            <constraint firstAttribute="width" constant="500" id="Gs4-qW-wJb"/>
+                                            <constraint firstAttribute="trailing" secondItem="SsN-nu-9EZ" secondAttribute="trailing" constant="20" symbolic="YES" id="PvN-5u-rfY"/>
+                                            <constraint firstItem="hII-r1-pPe" firstAttribute="centerX" secondItem="zBR-84-SHw" secondAttribute="centerX" id="UzH-du-AON"/>
+                                            <constraint firstItem="SsN-nu-9EZ" firstAttribute="leading" secondItem="zBR-84-SHw" secondAttribute="leading" constant="20" symbolic="YES" id="ajd-8h-8bt"/>
+                                            <constraint firstItem="hII-r1-pPe" firstAttribute="top" secondItem="o2a-Uq-SSi" secondAttribute="bottom" constant="59" id="dbM-O3-nww"/>
+                                            <constraint firstAttribute="bottom" secondItem="SsN-nu-9EZ" secondAttribute="bottom" constant="40" id="eVi-JR-RXZ"/>
+                                            <constraint firstItem="hII-r1-pPe" firstAttribute="centerY" secondItem="zBR-84-SHw" secondAttribute="centerY" id="s8P-b9-5FS"/>
+                                            <constraint firstItem="o2a-Uq-SSi" firstAttribute="centerX" secondItem="zBR-84-SHw" secondAttribute="centerX" id="tWD-S6-oJd"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="YDD-cL-HLS"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.19275144869999999" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="zBR-84-SHw" firstAttribute="centerY" secondItem="cg0-Vb-wRT" secondAttribute="centerY" id="MOg-qJ-SYJ"/>
+                                    <constraint firstItem="zBR-84-SHw" firstAttribute="centerX" secondItem="cg0-Vb-wRT" secondAttribute="centerX" id="saE-M9-GZI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nkI-NY-t1X"/>
+            <constraints>
+                <constraint firstItem="k86-Pd-lRQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0gN-y9-6L5"/>
+                <constraint firstAttribute="bottom" secondItem="k86-Pd-lRQ" secondAttribute="bottom" id="MTA-GK-hrT"/>
+                <constraint firstAttribute="trailing" secondItem="k86-Pd-lRQ" secondAttribute="trailing" id="bxZ-oi-Ydo"/>
+                <constraint firstItem="k86-Pd-lRQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vXT-LW-6bZ"/>
+            </constraints>
+            <point key="canvasLocation" x="-81" y="-109"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="White">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

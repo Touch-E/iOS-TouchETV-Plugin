@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="273" id="fBs-An-CcD" customClass="CategoriesTableViewCell" customModule="TouchETVPlugin">
+            <rect key="frame" x="0.0" y="0.0" width="573" height="273"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fBs-An-CcD" id="S0Q-fX-qc8">
+                <rect key="frame" x="0.0" y="0.0" width="573" height="273"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LYf-iK-88V">
+                        <rect key="frame" x="0.0" y="4" width="573" height="269"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movies (40)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBZ-cl-3Ii">
+                                <rect key="frame" x="40" y="0.0" width="513" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="EG4-cZ-diV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ntz-6c-yKk">
+                                <rect key="frame" x="0.0" y="68" width="573" height="201"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iNw-Od-KZ9">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Ntz-6c-yKk" secondAttribute="bottom" id="7P6-I3-Aqj"/>
+                            <constraint firstAttribute="trailing" secondItem="OBZ-cl-3Ii" secondAttribute="trailing" constant="20" id="Oj7-yB-vRM"/>
+                            <constraint firstItem="OBZ-cl-3Ii" firstAttribute="leading" secondItem="LYf-iK-88V" secondAttribute="leading" constant="40" id="g8x-zG-XCX"/>
+                            <constraint firstItem="Ntz-6c-yKk" firstAttribute="top" secondItem="OBZ-cl-3Ii" secondAttribute="bottom" constant="20" id="i70-qJ-NtL"/>
+                            <constraint firstItem="OBZ-cl-3Ii" firstAttribute="top" secondItem="LYf-iK-88V" secondAttribute="top" id="qaW-xX-NXU"/>
+                            <constraint firstItem="Ntz-6c-yKk" firstAttribute="leading" secondItem="LYf-iK-88V" secondAttribute="leading" id="upC-6d-lbk"/>
+                            <constraint firstAttribute="trailing" secondItem="Ntz-6c-yKk" secondAttribute="trailing" id="vda-dz-5Mw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LYf-iK-88V" firstAttribute="top" secondItem="S0Q-fX-qc8" secondAttribute="top" constant="4" id="FxP-Km-Uoe"/>
+                    <constraint firstAttribute="trailing" secondItem="LYf-iK-88V" secondAttribute="trailing" id="Mna-cr-GDF"/>
+                    <constraint firstAttribute="bottom" secondItem="LYf-iK-88V" secondAttribute="bottom" id="duT-HR-iMR"/>
+                    <constraint firstItem="LYf-iK-88V" firstAttribute="leading" secondItem="S0Q-fX-qc8" secondAttribute="leading" id="nZi-4j-1hZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="1ks-Xo-ai1"/>
+            <color key="backgroundColor" red="0.070588238540000001" green="0.070588238540000001" blue="0.070588238540000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="cvCategory" destination="Ntz-6c-yKk" id="Ehv-OV-va0"/>
+                <outlet property="lblVideoCount" destination="OBZ-cl-3Ii" id="47Z-1s-59n"/>
+            </connections>
+            <point key="canvasLocation" x="-590.5" y="38.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="White">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

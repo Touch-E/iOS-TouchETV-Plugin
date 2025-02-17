@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OrderStatusCell" id="Rz2-K0-ksD" customClass="OrderStatusCell" customModule="TouchETVPlugin">
+            <rect key="frame" x="0.0" y="0.0" width="580" height="126"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="580" height="126"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1x-TA-6sR" customClass="UIViewX" customModule="TouchETVPlugin">
+                        <rect key="frame" x="0.0" y="2" width="580" height="122"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="viN-WA-foO">
+                                <rect key="frame" x="25" y="38" width="540" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="jj7-PQ-wsP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pST-Mg-UTd">
+                                <rect key="frame" x="11" y="58" width="6" height="6"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="a7W-mX-dMl"/>
+                                    <constraint firstAttribute="width" constant="6" id="hQh-6X-76y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="viN-WA-foO" secondAttribute="trailing" constant="15" id="5x0-OW-WEa"/>
+                            <constraint firstItem="viN-WA-foO" firstAttribute="leading" secondItem="pST-Mg-UTd" secondAttribute="trailing" constant="8" id="YQV-RM-yGw"/>
+                            <constraint firstItem="pST-Mg-UTd" firstAttribute="centerY" secondItem="Y1x-TA-6sR" secondAttribute="centerY" id="ato-VV-5i1"/>
+                            <constraint firstItem="viN-WA-foO" firstAttribute="leading" secondItem="Y1x-TA-6sR" secondAttribute="leading" constant="25" id="bV4-Ia-sdl"/>
+                            <constraint firstItem="viN-WA-foO" firstAttribute="centerY" secondItem="Y1x-TA-6sR" secondAttribute="centerY" id="wAC-fC-eoM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="7PP-Ag-gPX"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Y1x-TA-6sR" firstAttribute="top" secondItem="Rz2-K0-ksD" secondAttribute="top" constant="2" id="FfH-gs-YTF"/>
+                <constraint firstAttribute="trailing" secondItem="Y1x-TA-6sR" secondAttribute="trailing" id="SLX-Dx-nzs"/>
+                <constraint firstItem="Y1x-TA-6sR" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="rEn-l3-VW6"/>
+                <constraint firstAttribute="bottom" secondItem="Y1x-TA-6sR" secondAttribute="bottom" constant="2" id="w8V-Z1-d3F"/>
+            </constraints>
+            <size key="customSize" width="580" height="126"/>
+            <connections>
+                <outlet property="backUV" destination="Y1x-TA-6sR" id="e79-sw-wTD"/>
+                <outlet property="dotUV" destination="pST-Mg-UTd" id="fEd-5e-Vaf"/>
+                <outlet property="nameLBLLeftCON" destination="bV4-Ia-sdl" id="3LN-Gi-R6n"/>
+                <outlet property="statusName" destination="viN-WA-foO" id="A2f-Am-1cs"/>
+            </connections>
+            <point key="canvasLocation" x="425" y="-5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="White">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

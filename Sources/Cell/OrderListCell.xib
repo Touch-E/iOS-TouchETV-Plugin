@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fBs-An-CcD" customClass="OrderListCell" customModule="TouchETVPlugin">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fBs-An-CcD" id="S0Q-fX-qc8">
+                <rect key="frame" x="0.0" y="0.0" width="1920" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Q3C-DA-Fex">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="44"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vb8-9b-Iw7" customClass="UIViewX" customModule="TouchETVPlugin">
+                                <rect key="frame" x="0.0" y="0.0" width="640" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tf4-yQ-k58">
+                                        <rect key="frame" x="274" y="-1" width="92" height="46"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="tf4-yQ-k58" firstAttribute="centerY" secondItem="Vb8-9b-Iw7" secondAttribute="centerY" id="lxe-j7-m98"/>
+                                    <constraint firstItem="tf4-yQ-k58" firstAttribute="centerX" secondItem="Vb8-9b-Iw7" secondAttribute="centerX" id="qNh-Sh-0qf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DYx-Qp-1jD" customClass="UIViewX" customModule="TouchETVPlugin">
+                                <rect key="frame" x="640" y="0.0" width="640" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYD-vZ-XmM">
+                                        <rect key="frame" x="274" y="-1" width="92" height="46"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="TYD-vZ-XmM" firstAttribute="centerY" secondItem="DYx-Qp-1jD" secondAttribute="centerY" id="dCZ-Tb-RXE"/>
+                                    <constraint firstItem="TYD-vZ-XmM" firstAttribute="centerX" secondItem="DYx-Qp-1jD" secondAttribute="centerX" id="n7k-95-NlT"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJY-Jv-QvF" customClass="UIViewX" customModule="TouchETVPlugin">
+                                <rect key="frame" x="1280" y="0.0" width="640" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izr-Bj-aKP">
+                                        <rect key="frame" x="274" y="-1" width="92" height="46"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="izr-Bj-aKP" firstAttribute="centerX" secondItem="jJY-Jv-QvF" secondAttribute="centerX" id="OrO-V4-eqR"/>
+                                    <constraint firstItem="izr-Bj-aKP" firstAttribute="centerY" secondItem="jJY-Jv-QvF" secondAttribute="centerY" id="k1E-mE-fP0"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="Color"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JtZ-vS-Uvs">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="44"/>
+                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="btnSelectionAction:" destination="fBs-An-CcD" eventType="primaryActionTriggered" id="bah-bN-vY6"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Q3C-DA-Fex" firstAttribute="leading" secondItem="S0Q-fX-qc8" secondAttribute="leading" id="0CR-iJ-UOm"/>
+                    <constraint firstItem="Q3C-DA-Fex" firstAttribute="top" secondItem="S0Q-fX-qc8" secondAttribute="top" id="1j9-o9-jla"/>
+                    <constraint firstAttribute="bottom" secondItem="JtZ-vS-Uvs" secondAttribute="bottom" id="9jE-Q0-ukK"/>
+                    <constraint firstAttribute="bottom" secondItem="Q3C-DA-Fex" secondAttribute="bottom" id="PUh-pA-20B"/>
+                    <constraint firstAttribute="trailing" secondItem="Q3C-DA-Fex" secondAttribute="trailing" id="PvV-kt-1vS"/>
+                    <constraint firstAttribute="trailing" secondItem="JtZ-vS-Uvs" secondAttribute="trailing" id="UQu-Eb-W6X"/>
+                    <constraint firstItem="JtZ-vS-Uvs" firstAttribute="top" secondItem="S0Q-fX-qc8" secondAttribute="top" id="cDZ-C4-WJV"/>
+                    <constraint firstItem="JtZ-vS-Uvs" firstAttribute="leading" secondItem="S0Q-fX-qc8" secondAttribute="leading" id="yac-jw-1Yw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="1ks-Xo-ai1"/>
+            <connections>
+                <outlet property="orderDateLBL" destination="TYD-vZ-XmM" id="DQQ-tn-pFl"/>
+                <outlet property="orderNOLBL" destination="tf4-yQ-k58" id="lL2-S3-veu"/>
+                <outlet property="totalPurchaseLBL" destination="izr-Bj-aKP" id="ExG-By-Hss"/>
+            </connections>
+            <point key="canvasLocation" x="-3" y="-35"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Color">
+            <color red="0.57999998331069946" green="0.62699997425079346" blue="0.65499997138977051" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

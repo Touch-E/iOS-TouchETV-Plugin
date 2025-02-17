@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModuleProvider="target">
+            <connections>
+                <outlet property="profileTBL" destination="fas-hi-4Zk" id="r3T-iY-nii"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6A-IH-7qa">
+                    <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6r7-Fa-ZGJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="A3G-MO-jcM">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4c-Rf-b7L">
+                                        <rect key="frame" x="0.0" y="60" width="1920" height="100"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back-button" translatesAutoresizingMaskIntoConstraints="NO" id="JYh-K2-TpZ">
+                                                <rect key="frame" x="34" y="2" width="80" height="80"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gW-PS-uhj">
+                                                <rect key="frame" x="34" y="2" width="80" height="80"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Hvl-zg-cH4"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Xr5-i3-kHQ"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                <connections>
+                                                    <action selector="backClick_Action:" destination="-1" eventType="primaryActionTriggered" id="XlL-mz-UVJ"/>
+                                                </connections>
+                                            </button>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo" translatesAutoresizingMaskIntoConstraints="NO" id="SM6-f7-0t3">
+                                                <rect key="frame" x="840" y="10" width="240" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="240" id="CWK-ex-CkT"/>
+                                                    <constraint firstAttribute="height" constant="80" id="VsK-IG-UOB"/>
+                                                </constraints>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j3O-Qj-UuQ">
+                                                <rect key="frame" x="1705" y="0.0" width="175" height="100"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Logout" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0Y-ex-s5D">
+                                                        <rect key="frame" x="55" y="29" width="112" height="42"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                                        <color key="textColor" red="0.92156862750000001" green="0.3411764706" blue="0.3411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logout" translatesAutoresizingMaskIntoConstraints="NO" id="Hc7-GI-WBN">
+                                                        <rect key="frame" x="7" y="30" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="DZR-gR-VmX"/>
+                                                            <constraint firstAttribute="height" constant="40" id="vc8-FL-mXG"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNP-nm-bxk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="175" height="100"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="logoutClick_Action:" destination="-1" eventType="primaryActionTriggered" id="XYh-JW-6cR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="UNP-nm-bxk" secondAttribute="bottom" id="000-EJ-X0f"/>
+                                                    <constraint firstItem="u0Y-ex-s5D" firstAttribute="centerY" secondItem="j3O-Qj-UuQ" secondAttribute="centerY" id="Ckq-MI-gaH"/>
+                                                    <constraint firstItem="UNP-nm-bxk" firstAttribute="top" secondItem="j3O-Qj-UuQ" secondAttribute="top" id="IMU-dR-bWT"/>
+                                                    <constraint firstItem="u0Y-ex-s5D" firstAttribute="leading" secondItem="Hc7-GI-WBN" secondAttribute="trailing" constant="8" id="PoB-cL-t2i"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UNP-nm-bxk" secondAttribute="trailing" id="QbV-9o-eUL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="u0Y-ex-s5D" secondAttribute="trailing" constant="8" id="S0U-Gr-obS"/>
+                                                    <constraint firstItem="UNP-nm-bxk" firstAttribute="leading" secondItem="j3O-Qj-UuQ" secondAttribute="leading" id="dwn-Va-1q0"/>
+                                                    <constraint firstItem="Hc7-GI-WBN" firstAttribute="centerY" secondItem="u0Y-ex-s5D" secondAttribute="centerY" id="eqP-va-BXg"/>
+                                                    <constraint firstAttribute="width" constant="175" id="gbn-uw-IrD"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="JYh-K2-TpZ" firstAttribute="top" secondItem="8gW-PS-uhj" secondAttribute="top" id="5Jk-zi-Hcc"/>
+                                            <constraint firstItem="j3O-Qj-UuQ" firstAttribute="top" secondItem="G4c-Rf-b7L" secondAttribute="top" id="C4l-mH-lNm"/>
+                                            <constraint firstItem="8gW-PS-uhj" firstAttribute="centerY" secondItem="G4c-Rf-b7L" secondAttribute="centerY" constant="-8" id="Lnd-J3-SSv"/>
+                                            <constraint firstItem="JYh-K2-TpZ" firstAttribute="bottom" secondItem="8gW-PS-uhj" secondAttribute="bottom" id="MkK-SF-5rV"/>
+                                            <constraint firstItem="8gW-PS-uhj" firstAttribute="leading" secondItem="G4c-Rf-b7L" secondAttribute="leading" constant="34" id="N8Y-4s-a8n"/>
+                                            <constraint firstItem="SM6-f7-0t3" firstAttribute="centerY" secondItem="G4c-Rf-b7L" secondAttribute="centerY" id="OVI-ba-RWY"/>
+                                            <constraint firstItem="JYh-K2-TpZ" firstAttribute="trailing" secondItem="8gW-PS-uhj" secondAttribute="trailing" id="ZAE-ho-hIf"/>
+                                            <constraint firstItem="SM6-f7-0t3" firstAttribute="centerX" secondItem="G4c-Rf-b7L" secondAttribute="centerX" id="bEk-yt-jzU"/>
+                                            <constraint firstAttribute="height" constant="100" id="kZE-u5-shq"/>
+                                            <constraint firstItem="j3O-Qj-UuQ" firstAttribute="centerY" secondItem="G4c-Rf-b7L" secondAttribute="centerY" id="r01-dJ-6PZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="j3O-Qj-UuQ" secondAttribute="trailing" constant="40" id="tik-TA-hOu"/>
+                                            <constraint firstItem="JYh-K2-TpZ" firstAttribute="leading" secondItem="8gW-PS-uhj" secondAttribute="leading" id="vZq-jh-zgF"/>
+                                            <constraint firstAttribute="bottom" secondItem="j3O-Qj-UuQ" secondAttribute="bottom" id="zDl-ak-XlA"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="fas-hi-4Zk">
+                                        <rect key="frame" x="0.0" y="160" width="1920" height="920"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="StG-Yd-8UO"/>
+                                <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="G4c-Rf-b7L" secondAttribute="trailing" id="CQL-b2-lmD"/>
+                                    <constraint firstItem="fas-hi-4Zk" firstAttribute="leading" secondItem="A3G-MO-jcM" secondAttribute="leading" id="X0u-uF-KHs"/>
+                                    <constraint firstItem="G4c-Rf-b7L" firstAttribute="top" secondItem="StG-Yd-8UO" secondAttribute="top" id="Za1-pG-Q4q"/>
+                                    <constraint firstAttribute="trailing" secondItem="fas-hi-4Zk" secondAttribute="trailing" id="a5N-fr-EVx"/>
+                                    <constraint firstItem="fas-hi-4Zk" firstAttribute="top" secondItem="G4c-Rf-b7L" secondAttribute="bottom" id="aAj-3k-7Cp"/>
+                                    <constraint firstItem="G4c-Rf-b7L" firstAttribute="leading" secondItem="A3G-MO-jcM" secondAttribute="leading" id="jAZ-hK-oRU"/>
+                                    <constraint firstAttribute="bottom" secondItem="fas-hi-4Zk" secondAttribute="bottom" id="raf-sl-Gb1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nkI-NY-t1X"/>
+            <constraints>
+                <constraint firstItem="D6A-IH-7qa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ApB-jJ-Gym"/>
+                <constraint firstAttribute="trailing" secondItem="D6A-IH-7qa" secondAttribute="trailing" id="FGj-HK-x3c"/>
+                <constraint firstAttribute="bottom" secondItem="D6A-IH-7qa" secondAttribute="bottom" id="ogH-Nd-Hi5"/>
+                <constraint firstItem="D6A-IH-7qa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tYx-pS-epH"/>
+            </constraints>
+            <point key="canvasLocation" x="319" y="-471"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Logout" width="17" height="17"/>
+        <image name="back-button" width="128" height="128"/>
+        <image name="ic_logo" width="124" height="30"/>
+    </resources>
+</document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ActorimageCollectionViewCell" id="Rz2-K0-ksD" customClass="ActorimageCollectionViewCell" customModule="TouchETVPlugin">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="393"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="393"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 5" translatesAutoresizingMaskIntoConstraints="NO" id="nmm-sT-TIQ">
+                        <rect key="frame" x="8" y="8" width="367" height="377"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="7PP-Ag-gPX"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nmm-sT-TIQ" secondAttribute="trailing" constant="8" id="CjG-Tr-WTP"/>
+                <constraint firstItem="nmm-sT-TIQ" firstAttribute="top" secondItem="Rz2-K0-ksD" secondAttribute="top" constant="8" id="F6a-3b-ls7"/>
+                <constraint firstAttribute="bottom" secondItem="nmm-sT-TIQ" secondAttribute="bottom" constant="8" id="cxW-VY-Xgq"/>
+                <constraint firstItem="nmm-sT-TIQ" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" constant="8" id="g2c-N6-tXf"/>
+            </constraints>
+            <size key="customSize" width="383" height="393"/>
+            <connections>
+                <outlet property="imgActor" destination="nmm-sT-TIQ" id="tCE-6s-vgz"/>
+            </connections>
+            <point key="canvasLocation" x="332.5" y="98.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image 5" width="121" height="172"/>
+    </resources>
+</document>

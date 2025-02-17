@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoriesCollectionViewCell" id="Rz2-K0-ksD" customClass="categoriesCollectionViewCell" customModule="TouchETVPlugin">
+            <rect key="frame" x="0.0" y="0.0" width="283" height="411"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="283" height="411"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 7" translatesAutoresizingMaskIntoConstraints="NO" id="cpe-3R-Lvx">
+                        <rect key="frame" x="0.0" y="10" width="283" height="325"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9V-wV-SYv">
+                        <rect key="frame" x="0.0" y="345" width="283" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="r8B-et-mVN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="7PP-Ag-gPX"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cpe-3R-Lvx" secondAttribute="trailing" id="2ab-WS-APP"/>
+                <constraint firstItem="cpe-3R-Lvx" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="3No-sZ-niK"/>
+                <constraint firstItem="cpe-3R-Lvx" firstAttribute="top" secondItem="Rz2-K0-ksD" secondAttribute="top" constant="10" id="69h-XH-Vwx"/>
+                <constraint firstItem="m9V-wV-SYv" firstAttribute="top" secondItem="cpe-3R-Lvx" secondAttribute="bottom" constant="10" id="Wsj-0u-JZo"/>
+                <constraint firstAttribute="bottom" secondItem="m9V-wV-SYv" secondAttribute="bottom" constant="20" id="bhj-vH-hnQ"/>
+                <constraint firstItem="m9V-wV-SYv" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="diC-8u-p3e"/>
+                <constraint firstAttribute="trailing" secondItem="m9V-wV-SYv" secondAttribute="trailing" id="gRH-W0-j1D"/>
+            </constraints>
+            <size key="customSize" width="283" height="411"/>
+            <connections>
+                <outlet property="imgVideo" destination="cpe-3R-Lvx" id="iL4-bm-bxv"/>
+                <outlet property="lblName" destination="m9V-wV-SYv" id="m0g-aM-7wa"/>
+                <outlet property="nameHeightCON" destination="r8B-et-mVN" id="19c-2i-0ix"/>
+            </connections>
+            <point key="canvasLocation" x="199.5" y="145.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="image 7" width="94" height="130"/>
+    </resources>
+</document>

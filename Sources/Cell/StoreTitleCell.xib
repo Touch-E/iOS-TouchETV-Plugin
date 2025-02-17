@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="Rz2-K0-ksD" customClass="StoreTitleCell" customModule="TouchETVPlugin">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZb-8x-yvP" customClass="UIViewX" customModule="TouchE_TV" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="381" height="95"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7l-W7-iko">
+                                <rect key="frame" x="15" y="8" width="351" height="79"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCz-cM-djN">
+                                <rect key="frame" x="0.0" y="0.0" width="381" height="95"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="selectionAction:" destination="Rz2-K0-ksD" eventType="primaryActionTriggered" id="op8-vI-ZFM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vCz-cM-djN" firstAttribute="top" secondItem="cZb-8x-yvP" secondAttribute="top" id="9Wy-WY-ZfQ"/>
+                            <constraint firstAttribute="trailing" secondItem="vCz-cM-djN" secondAttribute="trailing" id="AJQ-LB-c43"/>
+                            <constraint firstAttribute="bottom" secondItem="M7l-W7-iko" secondAttribute="bottom" constant="8" id="Ibg-Xq-ggT"/>
+                            <constraint firstItem="M7l-W7-iko" firstAttribute="top" secondItem="cZb-8x-yvP" secondAttribute="top" constant="8" id="NLO-0e-BhD"/>
+                            <constraint firstItem="M7l-W7-iko" firstAttribute="leading" secondItem="cZb-8x-yvP" secondAttribute="leading" constant="15" id="bfN-dr-OWC"/>
+                            <constraint firstAttribute="bottom" secondItem="vCz-cM-djN" secondAttribute="bottom" id="ff0-Y6-ymt"/>
+                            <constraint firstAttribute="trailing" secondItem="M7l-W7-iko" secondAttribute="trailing" constant="15" id="yzq-hi-30r"/>
+                            <constraint firstItem="vCz-cM-djN" firstAttribute="leading" secondItem="cZb-8x-yvP" secondAttribute="leading" id="zdO-ME-wqL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="7PP-Ag-gPX"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cZb-8x-yvP" secondAttribute="trailing" id="GPt-Oo-2iV"/>
+                <constraint firstItem="cZb-8x-yvP" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="avZ-FR-aXL"/>
+                <constraint firstAttribute="bottom" secondItem="cZb-8x-yvP" secondAttribute="bottom" id="k2l-iT-Ep5"/>
+                <constraint firstItem="cZb-8x-yvP" firstAttribute="top" secondItem="Rz2-K0-ksD" secondAttribute="top" id="kd3-GM-32F"/>
+            </constraints>
+            <size key="customSize" width="381" height="95"/>
+            <connections>
+                <outlet property="storeNameLBL" destination="M7l-W7-iko" id="TOW-5s-vDj"/>
+                <outlet property="viewName" destination="cZb-8x-yvP" id="Kv5-bX-Wyr"/>
+            </connections>
+            <point key="canvasLocation" x="281.5" y="63.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="White">
+            <color red="0.94900000095367432" green="0.94900000095367432" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

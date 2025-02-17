@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19529" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemTBLCell" rowHeight="142" id="fBs-An-CcD" customClass="ItemTBLCell" customModule="TouchETVPlugin">
+            <rect key="frame" x="0.0" y="0.0" width="910" height="142"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fBs-An-CcD" id="S0Q-fX-qc8">
+                <rect key="frame" x="0.0" y="0.0" width="910" height="142"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpj-2y-dWa">
+                        <rect key="frame" x="0.0" y="0.0" width="910" height="142"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pw6-kf-JVB">
+                                <rect key="frame" x="15" y="46" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8qu-se-ctx"/>
+                                    <constraint firstAttribute="width" constant="50" id="hW7-Mh-fm2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personalin Formation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNI-iR-NrU">
+                                <rect key="frame" x="80" y="50.5" width="333" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" name="White"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.070588235289999995" green="0.070588235289999995" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pw6-kf-JVB" firstAttribute="leading" secondItem="Lpj-2y-dWa" secondAttribute="leading" constant="15" id="HDE-hO-V7s"/>
+                            <constraint firstItem="aNI-iR-NrU" firstAttribute="centerY" secondItem="Lpj-2y-dWa" secondAttribute="centerY" id="TdX-rj-VNe"/>
+                            <constraint firstItem="pw6-kf-JVB" firstAttribute="centerY" secondItem="Lpj-2y-dWa" secondAttribute="centerY" id="mRp-dL-zmg"/>
+                            <constraint firstItem="aNI-iR-NrU" firstAttribute="leading" secondItem="pw6-kf-JVB" secondAttribute="trailing" constant="15" id="rke-fe-yvG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Lpj-2y-dWa" secondAttribute="bottom" id="4xB-IS-FDt"/>
+                    <constraint firstItem="Lpj-2y-dWa" firstAttribute="leading" secondItem="S0Q-fX-qc8" secondAttribute="leading" id="YuP-em-SOy"/>
+                    <constraint firstItem="Lpj-2y-dWa" firstAttribute="top" secondItem="S0Q-fX-qc8" secondAttribute="top" id="hr2-aH-iXu"/>
+                    <constraint firstAttribute="trailing" secondItem="Lpj-2y-dWa" secondAttribute="trailing" id="tHd-ED-BEu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="1ks-Xo-ai1"/>
+            <connections>
+                <outlet property="itemIMG" destination="pw6-kf-JVB" id="r0J-e2-5u8"/>
+                <outlet property="titleLBL" destination="aNI-iR-NrU" id="fuj-MO-H9j"/>
+            </connections>
+            <point key="canvasLocation" x="-344" y="-52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="White">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
