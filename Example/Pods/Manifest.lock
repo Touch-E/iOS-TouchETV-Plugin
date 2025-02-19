@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.8.1)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - SDWebImage (5.19.6):
+    - SDWebImage/Core (= 5.19.6)
+  - SDWebImage/Core (5.19.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.8.1)
+  - NVActivityIndicatorView (~> 4.8.0)
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - NVActivityIndicatorView
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  SDWebImage: a79252b60f4678812d94316c91da69ec83089c9f
+
+PODFILE CHECKSUM: 04d5634d0b88826b9341d78546b4e6acc952dece
+
+COCOAPODS: 1.15.2
