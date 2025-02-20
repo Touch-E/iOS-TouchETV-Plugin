@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "3dc6a42c7727c49bf26508e29b0a0b35f9c7e1ad",
+          "version": "5.8.1"
+        }
+      },
+      {
+        "package": "Cosmos",
+        "repositoryURL": "https://github.com/evgenyneu/Cosmos.git",
+        "state": {
+          "branch": null,
+          "revision": "cce521e734d0090494bd4afab5fd2e2f2465c1af",
+          "version": "23.0.0"
+        }
+      },
+      {
+        "package": "NVActivityIndicatorView",
+        "repositoryURL": "https://github.com/ninjaprox/NVActivityIndicatorView.git",
+        "state": {
+          "branch": null,
+          "revision": "4a4726d15367d82bd3e9e1f01625bd76dbbb0c98",
+          "version": "4.8.0"
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://github.com/Kishan-Italiya/SDWebImage.git",
+        "state": {
+          "branch": "main",
+          "revision": "b0dcc45355cd55d79c5d7c8ea15140924cdcbe16",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

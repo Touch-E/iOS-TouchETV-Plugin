@@ -539,7 +539,7 @@ extension EditProfileVC {
         print(params)
         start_loading()
         
-        self.get_api_request("https://api-cluster.system.touchetv.com/backoffice-user/api/v1/config/languages", headers: headersCommon).responseDecodable(of: StringResponseModel.self) { [self] response in
+        self.get_api_request("\(BaseURL)config/languages", headers: headersCommon).responseDecodable(of: StringResponseModel.self) { [self] response in
             print(response.result)
             switch response.result {
             case .success:
@@ -566,7 +566,7 @@ extension EditProfileVC {
         print(params)
         start_loading()
         
-        self.get_api_request("https://api-cluster.system.touchetv.com/backoffice-user/api/v1/config/currencies", headers: headersCommon).responseDecodable(of: StringResponseModel.self) { [self] response in
+        self.get_api_request("\(BaseURL)config/currencies", headers: headersCommon).responseDecodable(of: StringResponseModel.self) { [self] response in
             print(response.result)
             switch response.result {
             case .success:
@@ -701,7 +701,7 @@ extension EditProfileVC {
         print(params)
         start_loading()
         
-        self.post_api_request_withJson("https://api-cluster.system.touchetv.com/backoffice-user/api/v1/user/save\(loadContents)", params: params, headers: headersCommon).responseData { response in
+        self.post_api_request_withJson("\(BaseURL)user/save\(loadContents)", params: params, headers: headersCommon).responseData { response in
             print(response.result)
             switch response.result {
             case .success(let data):
@@ -753,7 +753,7 @@ extension EditProfileVC {
         ] as [String : Any]
         
         start_loading()
-        self.delete_api_request_withJson("https://api-cluster.system.touchetv.com/backoffice-user/api/v1/user/delete", params: params, headers: headersCommon).responseData { response in
+        self.delete_api_request_withJson("\(BaseURL)user/delete", params: params, headers: headersCommon).responseData { response in
            // print(String(data: response.data!, encoding: .utf8))
             if response.response?.statusCode == 200{
                 UserDefaults.standard.setValue(nil, forKey: "userToken")

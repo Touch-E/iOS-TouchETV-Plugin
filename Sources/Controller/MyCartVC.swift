@@ -595,7 +595,7 @@ extension MyCartVC {
 //            "Authorization": AuthToken
 //        ]
         start_loading()
-        self.get_api_request("https://api-cluster.system.touchetv.com/backoffice-user/api/v1/user/\(UserID)/address/", headers: headersCommon).responseDecodable(of: AddressData.self) { response in
+        self.get_api_request("\(BaseURL)user/\(UserID)/address/", headers: headersCommon).responseDecodable(of: AddressData.self) { response in
             //print(response.result)
             switch response.result {
             case .success:

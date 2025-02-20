@@ -244,7 +244,7 @@ extension AddAddressVC {
         ] as [String : Any]
         //print(params)
         start_loading()
-        self.post_api_request_withJson("https://api-cluster.system.touchetv.com/backoffice-user/api/v1/user/\(UserID)/address", params: params, headers: headers).responseData { response in
+        self.post_api_request_withJson("\(BaseURL)user/\(UserID)/address", params: params, headers: headers).responseData { response in
             print(response.result)
             switch response.result {
             case .success:
@@ -286,7 +286,7 @@ extension AddAddressVC {
         ] as [String : Any]
         //print(params)
         start_loading()
-        self.put_api_request_withJson("https://api-cluster.system.touchetv.com/backoffice-user/api/v1/user/\(UserID)/address/\(addressData?.id ?? 0)", params: params, headers: headers).responseData { response in
+        self.put_api_request_withJson("\(BaseURL)user/\(UserID)/address/\(addressData?.id ?? 0)", params: params, headers: headers).responseData { response in
             print(response.result)
             switch response.result {
             case .success:
